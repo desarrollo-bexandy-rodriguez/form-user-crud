@@ -1,0 +1,23 @@
+br_user_form_crud.display:
+  path: '/br-user-form-crud'
+  defaults:
+    _controller: '\Drupal\br_user_form_crud\Controller\MostrarTablaController::display'
+    _title: 'Mostrar usuarios guardados en la Base de Datos'
+  requirements:
+    _permission: 'access content'
+
+br_user_form_crud.br_user_form_crud_form:
+  path: '/br-user-form-crud/form/datos'
+  defaults:
+    _form: '\Drupal\br_user_form_crud\Form\BRUserFormCrudForm'
+    _title: 'Editar usuario en la Base de Datos'
+  requirements:
+    _access: 'TRUE'
+
+br_user_form_crud.delete_form:
+  path: '/br-user-form-crud/form/delete/{cid}'
+  defaults:
+    _form: '\Drupal\br_user_form_crud\Form\DeleteForm'
+    _title: 'Borrar usuario de la Base de Datos'
+  requirements:
+    _access: 'TRUE'

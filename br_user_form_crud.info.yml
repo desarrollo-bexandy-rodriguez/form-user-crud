@@ -1,0 +1,5 @@
+name: Formulario con CRUD
+description: Un formulario con funciones CRUD para introducir datos de usuario.
+core: 8.x
+package: Custom
+type: module
